@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
   outer_keys = []
   inner_keys = []
   
-  data.each {|key, value| outer_keys << key; value.each {|key2, value2| value2.each {|x| names << x}}}
+  data.each {|key, value| outer_keys << key; value.each {|key2, value2| inner_keys << key2; value2.each {|x| names << x}}}
   
   names = names.uniq
   
