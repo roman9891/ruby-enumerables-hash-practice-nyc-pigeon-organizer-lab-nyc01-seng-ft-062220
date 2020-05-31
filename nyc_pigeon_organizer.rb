@@ -9,8 +9,9 @@ def nyc_pigeon_organizer(data)
   
   names = names.uniq
   
-  names.each {
-  #for each name check to   
+  names.each {|name|
+  #for each name add as key to new hash 
+    reorganized_hash[name] = {}
   }
   
   binding.pry
