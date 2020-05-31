@@ -3,7 +3,7 @@ require 'pry'
 def nyc_pigeon_organizer(data)
   # write your code here!
   names = []
-  data.each {|x| x.each {|y| y.each {|z| names << z}}}
+  data.each {|key_1, key_2, |}
   binding.pry
   {}
 end
