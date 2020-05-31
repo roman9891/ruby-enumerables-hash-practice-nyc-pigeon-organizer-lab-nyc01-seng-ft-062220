@@ -17,8 +17,7 @@ def nyc_pigeon_organizer(data)
   names = names.uniq
   
   names.each {|name|
-  #for each name add as key to new hash 
-    reorganized_hash[name] = {}
+    #reorganized_hash[name] = {}
     outer_keys.each {|key| reorganized_hash[name][key] = []}
     data.each {|key1,value1|
       value1.each {|key2, value2|
