@@ -13,7 +13,7 @@ def nyc_pigeon_organizer(data)
   
   names.each {|name|
   #for each name add as key to new hash 
-    reorganized_hash[name] = {}
+    #reorganized_hash[name] = {}
     outer_keys.each {|key| reorganized_hash[name][key] = {}}
   }
   
