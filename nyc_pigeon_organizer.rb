@@ -4,8 +4,10 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   reorganized_hash = {}
   names = []
+  outer_keys = []
+  inner_keys = []
   
-  data.each {|key, value| value.each {|key2, value2| value2.each {|x| names << x}}}
+  data.each {|key, value| outer_keys << key; value.each {|key2, value2| value2.each {|x| names << x}}}
   
   names = names.uniq
   
