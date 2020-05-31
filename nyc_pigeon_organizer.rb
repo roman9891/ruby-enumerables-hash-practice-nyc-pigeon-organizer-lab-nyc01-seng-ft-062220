@@ -2,7 +2,7 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   # write your code here!
-  #reorganized_hash = {}
+  reorganized_hash = {}
   names = []
   outer_keys = []
   
