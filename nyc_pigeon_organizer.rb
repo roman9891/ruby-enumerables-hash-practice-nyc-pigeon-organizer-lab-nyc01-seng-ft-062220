@@ -17,7 +17,7 @@ def nyc_pigeon_organizer(data)
     outer_keys.each {|key| reorganized_hash[name][key] = []}
     data.each {|key1,value1|
       value1.each {|key2, value2|
-        if key2[value2] include? name
+        if key2[value2].include? name
           reorganized_hash[name][key1] = key2
         end
       }
