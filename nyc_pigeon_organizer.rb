@@ -27,6 +27,5 @@ def nyc_pigeon_organizer(data)
       }
     }
   }
-  #binding.pry
   reorganized_hash
 end
