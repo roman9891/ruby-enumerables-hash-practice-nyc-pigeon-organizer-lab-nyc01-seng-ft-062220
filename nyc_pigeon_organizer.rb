@@ -5,12 +5,12 @@ def nyc_pigeon_organizer(data)
   reorganized_hash = {}
   names = []
   outer_keys = []
-  inner_keys = []
+  #inner_keys = []
   
   data.each {|key, value|
     outer_keys << key 
     value.each {|key2, value2|
-      inner_keys << key2 
+      #inner_keys << key2 
       value2.each {|x|
         names << x
       }
