@@ -1,7 +1,6 @@
 require 'pry'
 
 def nyc_pigeon_organizer(data)
-  # write your code here!
   reorganized_hash = {}
   names = []
   outer_keys = []
@@ -9,7 +8,6 @@ def nyc_pigeon_organizer(data)
   data.each {|key, value|
     outer_keys << key 
     value.each {|key2, value2|
-      #inner_keys << key2 
       value2.each {|x|
         names << x
       }
